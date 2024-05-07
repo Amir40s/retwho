@@ -11,10 +11,9 @@ import '../../widgets/custom_password_widget.dart';
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
 
-  var emailController = TextEditingController();
-
+  final emailController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-  final ValueNotifier<bool> _obscurePassword = ValueNotifier<bool>(true);
+  final _obscurePassword = ValueNotifier<bool>(true);
 
   @override
   Widget build(BuildContext context) {
